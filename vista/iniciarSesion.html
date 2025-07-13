@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- Documento HTML5 -->
+
+<html lang="en">
+<!-- Inicio del documento HTML en inglés -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Codificación UTF-8 -->
+    <script src="https://kit.fontawesome.com/864b05cb8f.js" crossorigin="anonymous"></script>
+    <!-- Script de Font Awesome para íconos -->
+    <link rel="stylesheet" href="../vista/css/styles-iniciarSesion.css">
+    <!-- Hoja de estilos principal -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Responsive para dispositivos móviles -->
+    <title>Iniciar Sesion</title>
+    <!-- Título de la página -->
+</head>
+<body>
+    <!-- Inicio del cuerpo -->
+    <div class="baner">
+        <!-- Banner superior -->
+        <a href="../index.html"><img src="../vista/imagenes/logoEmpresa.svg" alt="logo"></a>
+        <h1>VeteriCrack</h1>
+        <!-- Logo de la empresa -->
+    </div>
+    <br><br>
+
+    <!-- Contenedor principal del formulario - Aquí irían los estilos CSS generales -->
+<div class="contenedorFormulario">
+    <!-- Formulario con acción vacía (se completaría con backend) -->
+    <form action="">
+        <!-- Título del formulario - Importante para jerarquía visual -->
+        <p class="texto">Iniciar Sesión</p>
+        
+        <!-- Campo de usuario - Estructura clave -->
+        <div class="usuarioFormulario">
+            
+            <!-- Input principal - Atributo 'required' para validación frontend -->
+            <input type="text" required placeholder="✉️ Correo Electronico">
+            <!-- IMPORTANTE: Falta el atributo 'name' para enviar datos al servidor -->
+            <!-- MEJORA: Añadir id="usuarioNombre" para conectar con el label -->
+        </div>
+
+        <!-- Campo de contraseña - Misma estructura que usuario -->
+        <div class="contrasenaFormulario">
+            <input type="password" required placeholder=" 🔒 Contraseña">
+            <!-- IMPORTANTE: Falta atributo 'name' e 'id' para funcionalidad completa -->
+        </div>
+
+        <!-- Contenedor de botones - Parte crítica de interacción -->
+        <div class="btnFormulario">
+            <!-- Enlace para crear cuenta - Debería ser un botón secundario -->
+            <input type="submit" value="Iniciar Sesión">
+            <!-- Botón de submit - Punto clave de envío del formulario -->
+        </div>
+        <div class="aFormulario"><p>¿No tienes Cuenta? <a href="#">Crear Cuenta</a></p></div>
+    </form>
+</div>
+<br><br>
+
+    <footer>
+        <!-- Pie de página con dirección y contacto -->
+        <table>
+            <tr>
+                <td>Av. Adolfo López Mateos 392, Evolucion, 57708 Cdad. Nezahualcóyotl, Méx.</td>
+                <td>2025 Clínica Veterinaria Patitas Felices | Diseñado por Equipo Luis Dev | Todos los derechos reservados</td>
+            </tr>
+            <tr>
+                <td><a href="mailto:veterinaria@gmail.com"><i class="fas fa-envelope"> vetepatitasfelices@gmail.com</i></a></td>
+                <td><a href="tel:+52 55 3211 8491"><i class="fas fa-phone"> +52 55 3211 8491</i></a></td>
+            </tr>
+        </table>
+    </footer>
+    <center>
+        <p>Angel © 2025</p>
+        <!-- Créditos finales -->
+    </center>
+
+</body>
+<!-- Fin del cuerpo -->
+</html>
+<!-- Fin del documento -->

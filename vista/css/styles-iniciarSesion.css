@@ -1,0 +1,207 @@
+/* Reset global - Elimina márgenes/paddings predeterminados y establece modelo de caja */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del tamaño */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     /* Oculta cualquier contenido que desborde (¡Cuidado con esto!) */
+     overflow: hidden;
+}
+
+/* Banner superior - Contenedor principal del encabezado */
+.baner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; /* Altura fija - Considerar usar min-height para responsive */
+    background: rgb(247, 245, 245); /* Fondo gris claro */
+    border-radius: 5px; /* Esquinas redondeadas */
+    border: 1px solid black; /* Borde delgado negro */
+}
+
+
+/* Imágenes dentro de enlaces - Logo probablemente */
+a > img {
+    margin: 5px; /* Espaciado alrededor */
+    height: 100px; /* Altura fija - Podría distorsionar imágenes */
+}
+
+.btnRegresar > a > i{
+    color: #224d6e;
+    font-size: 8vh;
+}
+
+.btnRegresar {
+    width: 10vh;
+    height: 10vh;
+}
+
+.btnRegresar > a > i:hover{
+    color: #2182cc;
+}
+
+/* Contenedor del formulario - Centrado vertical/horizontal */
+.contenedorFormulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Mitad del viewport */
+}
+
+/* Formulario de login - Estilo principal */
+form {
+    height: 50vh; /* 80% del contenedor padre */
+    width: 44vh; /* Ancho basado en altura - Puede causar problemas */
+    flex-direction: column; /* Disposición vertical (necesita display:flex) */
+    box-sizing: border-box; /* Importante para dimensiones precisas */
+}
+
+/* Título del formulario */
+.texto {
+    background: white; /* Fondo blanco */
+    color: #224d6e; /* Azul corporativo */
+    font-weight: bold; /* Negrita */
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    font-size: 4vh; /* Tamaño basado en viewport */
+}
+
+/* Sección de usuario - Estructura de campos */
+.usuarioFormulario {
+    padding: 20px; /* Espaciado interno generoso */
+    display: flex;
+    justify-content: space-around; /* Distribución espaciada */
+    align-items: center; /* Centrado vertical */
+    position: relative; /* Contexto para posicionamiento absoluto */
+    margin: 1px; /* Mínimo margen */
+    height: 30%; /* Altura proporcional */
+}
+
+/* Campos de texto - Estilo base */
+input[type="text"] {
+    border: 2px solid #224d6e; /* Borde azul */
+    border-radius: 5px; /* Esquinas redondeadas */
+    outline: none; /* Elimina el outline predeterminado (no recomendado para accesibilidad) */
+    transition: border-color 0.3s ease; /* Transición suave */
+    height: 7vh;
+    width: 100%;
+}
+
+/* Campo de texto en foco - Feedback visual */
+input[type="text"]:focus {
+    border-color: #2182cc; /* Azul más claro */
+    box-shadow: 0 0 0 2px rgba(34, 77, 110, 0.2); /* Sombra difuminada */
+}
+
+
+/* Sección de contraseña - Mismos estilos que usuario */
+.contrasenaFormulario {
+    padding: 20px;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 1px;
+    height: 30%;
+}
+
+/* Campo de contraseña - Estilo específico */
+input[type="password"] {
+    border: 2px solid #224d6e;
+    border-radius: 5px;
+    outline: none; /* Peligroso para accesibilidad */
+    transition: border-color 0.3s ease;
+    height: 7vh;
+    width: 100%;
+}
+
+/* Campo de contraseña en foco */
+input[type="password"]:focus {
+    border-color: #2182cc;
+    box-shadow: 0 0 0 2px rgba(34, 77, 110, 0.2);
+}
+
+
+/* Contenedor de botones */
+.btnFormulario {
+    display: flex;
+    justify-content: center; /* Espaciado uniforme */
+    align-items: center;
+    padding: 1px;
+    margin: 1px;
+    height: 17%; /* Misma altura proporcional */
+}
+
+/* Botón de submit - Estilo base */
+input[type="submit"] {
+    width: 88%;
+    height: 70%; /* Ancho basado en altura viewport */
+    cursor: pointer; /* Cambia cursor al pasar */
+    font-size: 20px;
+}
+
+/* Efecto hover para botón */
+input[type="submit"]:hover {
+    color: white; /* Texto blanco */
+    background: #2182cc; /* Fondo azul claro */
+    box-shadow: 0 0 0 2px rgba(34, 77, 110, 0.2); /* Sombra */
+}
+
+.aFormulario {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    height: 12%;
+}
+
+.aFormulario p {
+    background-color: #fff;
+    color: black;
+}
+
+/* Footer - Sección inferior */
+footer {
+    width: 100%; /* Ancho completo */
+    height: auto; /* Altura flexible */
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: flex-end; /* Alineado al fondo */
+}
+
+/* Tabla del footer - Estructura */
+footer table {
+    background: #224d6e; /* Fondo azul corporativo */
+    width: 100%; /* Ancho completo */
+    table-layout: fixed; /* Columnas de igual ancho */
+    border-collapse: collapse; /* Bordes unificados */
+    border: 1px solid; /* Borde delgado */
+}
+
+/* Celdas de la tabla */
+tr td {
+    color: white; /* Texto blanco */
+    text-align: center; /* Contenido centrado */
+    width: 10vh; /* Ancho basado en viewport */
+    height: 8vh; /* Altura basada en viewport */
+}
+
+/* Íconos generales */
+i {
+    font-size: 15px; /* Tamaño fijo */
+    color: white; /* Color blanco */
+    padding: 25px; /* Espaciado generoso */
+}
+
+/* Párrafos - Estilo general */
+.piede {
+    font-size: large; /* Tamaño predefinido */
+    color: white; /* Texto blanco */
+    background: #224d6e; /* Fondo azul */
+}
+
+p {
+    font-size: large;
+    color: white;
+    background: #224d6e;
+    /* Parrafos finales, como © Angel, con fondo azul */
+}

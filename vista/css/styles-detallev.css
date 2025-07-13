@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* Reinicia márgenes y paddings, usa box-sizing para layout y define fuente global */
+}
+
+.baner {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    background: rgb(247, 245, 245);
+    border-radius: 5px;
+    border: 1px solid black;
+    /* Estilos del banner superior con logo y título */
+}
+
+h1 {
+    color: #224d6e;
+    margin: 5px;
+    font-size: 40px;
+    /* Título principal grande y azul */
+}
+
+img {
+    margin: 5px;
+    height: 100px;
+    /* Todas las imágenes tienen altura de 100px y margen */
+}
+
+.separacion {
+    display: flex;
+    width: 900px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+    /* Contenedor de los enlaces del navbar, distribuidos uniformemente */
+}
+
+.separador2 {
+    display: flex;
+    max-width: 300px;
+    height: 100px;
+    justify-content: end;
+    align-items: center;
+    /* Contenedor para Iniciar Sesión alineado a la derecha */
+}
+
+nav {
+    background: #224d6e;
+    justify-content: space-around;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    border: 1px solid black;
+    /* Barra de navegación azul con distribución en flex */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    /* Estilo de los links: blancos, sin subrayado y tamaño mediano */
+}
+
+a:hover {
+    color: #d8d6d2;
+    /* Cambia color al pasar el mouse */
+}
+
+li {
+    list-style-type: none;
+    /* Quita viñetas de los li */
+}
+
+.btnRegresar > a > i{
+    color: #224d6e;
+    font-size: 8vh;
+}
+
+.btnRegresar {
+    width: 10vh;
+    height: 10vh;
+}
+
+.btnRegresar > a > i:hover{
+    color: #2182cc;
+}
+
+/* Contenedor principal - Organiza las columnas en fila */
+.contenedorDetalle {
+    display: flex; /* Layout flexible */
+    justify-content: space-around; /* Espacio uniforme */
+    align-items: center; /* Centrado vertical */
+    height: 60vh; /* Altura del 60% del viewport */
+}
+
+/* Columna de texto/información */
+.columnaDT {
+    border: 1px solid black;
+    height: 45vh; /* Altura */
+    width: 50vh; /* Ancho */
+    text-align: center; /* Texto centrado */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Sombra 3D */
+}
+
+/* Estilos de texto */
+.columnaDT > h2, 
+.columnaDT > h3 {
+    font-weight: bold;
+    color: #224d6e; /* Color corporativo */
+}
+
+/* Botón principal */
+.columnaDT > input {
+    width: 90%; /* Ancho casi completo */
+    height: 15%; /* Altura proporcional */
+    background-color: #224d6e; /* Azul oscuro */
+    color: white; /* Texto blanco */
+    font-size: 20px; /* Tamaño legible */
+}
+
+/* Efecto hover del botón */
+.columnaDT > input:hover {
+    background-color: #2182cc; /* Azul más claro */
+    transform: scale(1.1); /* Efecto de zoom */
+}
+
+/* Columna de imagen */
+.columnaImg > img {
+    height: 45vh; /* Misma altura que columnaDT */
+    width: 50vh; /* Mismo ancho que columnaDT */
+    border-radius: 10px; /* Esquinas redondeadas */
+    object-fit: cover; /* Ajuste de imagen */
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* Footer ocupa todo el ancho y se alinea abajo */
+}
+
+footer table {
+    background: #224d6e;
+    width: 100%;
+    height: auto;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid;
+    /* Tabla dentro del footer con fondo azul y bordes */
+}
+
+tr td {
+    color: white;
+    text-align: center;
+    width: 10vh;
+    height: 15vh;
+    /* Celdas del footer con texto blanco y centrado */
+}
+
+i {
+    font-size: 15px;
+    color: white;
+    padding: 25px;
+    /* Íconos Font Awesome en footer y navbar */
+}
+
+
+p {
+    font-size: large;
+    color: white;
+    background: #224d6e;
+    /* Parrafos finales, como © Angel, con fondo azul */
+}

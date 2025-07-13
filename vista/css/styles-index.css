@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* Reinicia márgenes y paddings, usa box-sizing para layout y define fuente global */
+}
+
+.baner {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    background: rgb(247, 245, 245);
+    border-radius: 5px;
+    border: 1px solid black;
+    /* Estilos del banner superior con logo y título */
+}
+
+h1 {
+    color: #224d6e;
+    margin: 5px;
+    font-size: 40px;
+    /* Título principal grande y azul */
+}
+
+img {
+    margin: 5px;
+    height: 100px;
+    /* Todas las imágenes tienen altura de 100px y margen */
+}
+
+.separacion {
+    display: flex;
+    width: 900px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+    /* Contenedor de los enlaces del navbar, distribuidos uniformemente */
+}
+
+.separador2 {
+    display: flex;
+    max-width: 300px;
+    height: 100px;
+    justify-content: end;
+    align-items: center;
+    /* Contenedor para Iniciar Sesión alineado a la derecha */
+}
+
+nav {
+    background: #224d6e;
+    justify-content: space-around;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    border: 1px solid black;
+    /* Barra de navegación azul con distribución en flex */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    /* Estilo de los links: blancos, sin subrayado y tamaño mediano */
+}
+
+a:hover {
+    color: #d8d6d2;
+    /* Cambia color al pasar el mouse */
+}
+
+li {
+    list-style-type: none;
+    /* Quita viñetas de los li */
+}
+
+.ContenedorBaner {
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    /* Contenedor de imagen banner, ocupa todo el ancho */
+}
+
+h2 {
+    font-size: 10vh;
+    color: #224d6e;
+    /* Título Servicios grande y azul */
+}
+
+h3 {
+    font-size: 39px;
+    color: #e7d429;
+    /* Subtítulo Más Comunes en amarillo */
+}
+
+.ContenedorBaner img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    /* Imagen banner ajustada proporcionalmente al contenedor */
+}
+
+.galeriaContenedor {
+    width: 99%;
+    height: 70vh;
+    margin: 4px;
+    padding: 1px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* Contenedor de las filas de servicios, distribuidos en flex */
+}
+
+.fila {
+    border-radius: 5px;
+    background: #88bfec;
+    text-align: center;
+    border: 1px solid;
+    width: 20%;
+    height: 55vh;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    /* Tarjeta de cada servicio: fondo azul claro, bordes y sombra */
+}
+
+.fila:hover {
+    background-color: #38698f;
+    cursor: pointer;
+    color: white;
+    transform: scale(1.2);
+    border: 2px solid black;
+    /* Efecto al pasar mouse: se agranda, cambia color y borde */
+}
+
+.fila>a>img {
+    width: 90%;
+    height: 50%;
+    /* Imagen dentro de la tarjeta: tamaño controlado */
+}
+
+a>h5 {
+    font-weight: lighter;
+    font-size: large;
+    /* Descripción y precios dentro de la tarjeta */
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* Footer ocupa todo el ancho y se alinea abajo */
+}
+
+footer table {
+    background: #224d6e;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid;
+    /* Tabla dentro del footer con fondo azul y bordes */
+}
+
+tr td {
+    color: white;
+    text-align: center;
+    width: 10vh;
+    height: 15vh;
+    /* Celdas del footer con texto blanco y centrado */
+}
+
+i {
+    font-size: 15px;
+    color: white;
+    padding: 25px;
+    /* Íconos Font Awesome en footer y navbar */
+}
+
+
+p {
+    font-size: large;
+    color: white;
+    background: #224d6e;
+    /* Parrafos finales, como © Angel, con fondo azul */
+}
